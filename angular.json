@@ -29,12 +29,11 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
+              "baseHref": "/ag-grid-test/",
               "budgets": [
                 {
                   "type": "initial",

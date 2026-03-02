@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-toolbar {
+  flex-shrink: 0;
+}
+
+.app-toolbar__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+.app-toolbar__nav {
+  display: flex;
+  gap: 4px;
+
+  a.active {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.app-content {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
