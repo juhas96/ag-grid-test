@@ -30,8 +30,9 @@ describe('App', () => {
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
     const links = compiled.querySelectorAll('.app-toolbar__nav a');
-    expect(links.length).toBe(2);
+    expect(links.length).toBe(3);
     expect(links[0].textContent).toContain('Client Table');
     expect(links[1].textContent).toContain('Server Table');
+    expect(links[2].textContent).toContain('Grouped Table');
   });
 });

@@ -12,4 +12,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/server-table/server-table.component').then((m) => m.ServerTableComponent),
   },
+  {
+    path: 'grouped-table',
+    loadComponent: () =>
+      import('./features/grouped-table/grouped-table.component').then(
+        (m) => m.GroupedTableComponent,
+      ),
+  },
 ];
